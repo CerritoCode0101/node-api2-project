@@ -4,6 +4,7 @@ const express = require("express")
 const router = express.Router()
 
 
+
 router.get("/", (req, res) => {
     model.find().then(( posts ) => {
         res.status(200).json( posts );
